@@ -12,6 +12,10 @@ http://tatsu-zine.com/books/railstutorial
 Deploy to heroku first_app
 ---------------------------
 
+Add Procfile
+
+    web: bundle exec rails server -p $PORT
+
 Heroku apps expect the app directory structure at the root of the repository.  but first_app is in a subdirecotry.
 
 So..to fix it,git subtree command.
